@@ -2,31 +2,31 @@
     padding: 70px 0 80px 0;
     background-color: #f6f6f6;
     &__wrapper {
-        margin-top: 65px;
-        display: flex;
-        justify-content: space-between;
+        margin-top: 65px; /* делаем верхний отступ между оберткой и заголовком */
+        display: flex; /* подключаем флексы */
+        justify-content: space-between; /* делаем выравнивание флексами (между) */
     }
     &__item {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 238px;
+        flex-direction: column; /* главную ось делаю вертикальной, чтобы иконка и текст распологались друг под другом */
+        align-items: center; /* выравниваю иконки и текст по центру по горизонтальной оси */
+        max-width: 238px; /* задаю максимальную ширину блока */
     }
     &__subtitle {
-        margin-top: 38px;
-        color: #0d0d0d;
-        font-size: 18px;
-        font-weight: 700;
+        margin-top: 38px; /* делаю верхний отступ подзаголовка */
+        color: #0d0d0d; /* задаю цвет тексту подзаголовка */
+        font-size: 18px; /* размер текста */
+        font-weight: 700; /* жирность текста */
     }
     &__descr {
-        margin-top: 26px;
-        color: #0d0d0d;
-        font-size: 14px;
-        font-weight: 300;
-        text-align: center;
-        a {
-            color: #ff0000;
-            text-decoration: underline;
+        margin-top: 26px; /* верхний отступ текста от подзаголовка */
+        color: #0d0d0d; /* цвет текста */
+        font-size: 14px; /* зазмер текста */
+        font-weight: 300; /* жирность текста */
+        text-align: center; /* выравниваю текст описания по центру */
+        a { /* задаю условия для ссылки */
+            color: #ff0000; /* цвет текста */
+            text-decoration: underline; /* делаю подчеркивание ссылки, даже когда на нее не наводишь курсором */
         }
     }
 }

@@ -1,36 +1,36 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* задаю флекс для выравнивания с помощью флексов */
+    justify-content: space-between; /* выравниваю по основной оси (горизонт) */
+    align-items: center; /* выравниваю по вертикали */
     &__logo {
-        width: 250px;
+        width: 250px; /* обезопалим себя если лого вдруг поменяется - задаю ширину контейнерв под логотип, если он будет в дальнейшем меняться */
         img {
-            width: 100%;
+            width: 100%; /* задаю размер картинки логотипа */
         }
     }
-    // &__official {
-    //     color: #ffffff;
-    //     font-size: 12px;
-    //     font-weight: 500;
-    //     text-align: center;
-    //     span {
-    //         display: block;
-    //         font-size: 18px;
-    //     }
-    // }
-    // &__phone {
-    //     display: block;
-    //     color: #ffffff;
-    //     font-size: 18px;
-    //     font-weight: 700;
-    //     &:hover {
-    //         color: #fff;
-    //         text-decoration: none;
-    //     }
-    // }
-    // &__contacts {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: flex-end;
-    // }
+    &__official {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center; /* выравниваем текст по центру */
+        span {
+            display: block; /* для того чтобы наш текст перенесся на следующую страницу */
+            font-size: 18px;
+        }
+    }
+    &__phone {
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            color: #fff; /* задаем цвет текста при наведении на него курсором */
+            text-decoration: none; /* текст не подчеркивается при наведении курсором */
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column; /* задаем основной осью вертикальную, а не как по умолчанию горизрнтальную ось */
+        align-items: flex-end; /* выравниваем наши колонки */
+    }
 }
