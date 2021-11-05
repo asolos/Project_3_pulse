@@ -11,7 +11,7 @@
 </head>
 <body>
     
-    <div class="promo">
+    <section id="up" class="promo"> <!-- делаем секцией и ставим id чтобы можно было прийти к ней по ссылке -->
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo"> <!-- делаем логотип ссылкой, для того чтобы всегда можно было вернуться на начальную страницу -->
@@ -56,9 +56,9 @@
                 </div>      
             </div>            
         </div>
-    </div>
+    </section>
     
-    <div class="advantages">
+    <section class="advantages">
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="advantages__wrapper">
@@ -96,6 +96,27 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left"> <!-- добавляем к классу title модификатор title_left который по правилам БЭМ пишется через одну нижнюю чертоску -->
+                Получите бесплатную консультацию<br>
+                по подбору пульсометра
+            </h2>
+            <div class="consultation__descr">
+                Просто заполните форму заявки<br> 
+                и мы перезвоним вам в течении 10 минут
+            </div>
+
+            <form class="feed-form" action="#"> <!-- специальный класс для заполнения форм, ссылка нам нужня для бэкэнд разработки -->
+                <input required placeholder="Ваше имя" type="text"> <!-- required - нам делает эту форму обязательной для заполнения, placeholder - текст который будет внутри поля, type - тип поля -->
+                <input required placeholder="Ваше телефон" type="number"> <!-- тип number позволяет вводить только цифры и некоторые знаки -->
+                <input required placeholder="Ваше E-mail" type="email"> <!-- тип email проверяет наличие собачки в названии почты, чтобы не записали какую нибудь хрень -->
+
+                <button class="button button_submit">заказать консультацию</button> <!-- добавляем кнопку для отправки заполненной формы, кнопке присваиваем модификатор submit (button_submit) для дальнейшей стилизации по модификатору -->
+            </form>
+        </div>
+    </section>
 </body>
 </html>

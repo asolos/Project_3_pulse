@@ -1,0 +1,10 @@
+.consultation {
+    min-height: 680px; /* назначаем минимальную высоту нашего блока, чтобы если вдруг будет изменение то он просто раздвинулся, а если нет то будет высотой 680 */
+    padding: 100px 0 92px 0;
+    background: url(../../img/consultation.jpg) center (center/cover) no-repeat; /* прописываем путь к картинке, выставляем ее по центру, center/cover чтобы она растянулась на весь блок, и чтобы не повторялась если будет маленькая */
+    &__descr {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 20px;        
+    }
+}
