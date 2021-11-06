@@ -7,6 +7,7 @@
     <title>Pulse</title> <!-- имя которое будет прописываться на корешке страницы браузера -->
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- подключаем сброс стилей браузера перед загрузкой нашего сайта, для корректного отображения всех стилей, которые мы задали -->
     <link rel="stylesheet" href="css/font.css"> <!-- подключаем шрифты -->
+    <link rel="stylesheet" href="css/slick.css"> <!-- подключаем slick для создания слайдера -->
     <link rel="stylesheet" href="css/style.min.css"> <!-- подключаем наш файл css для подтягивания прописанных стилей -->
 </head>
 <body>
@@ -118,5 +119,26 @@
             </form>
         </div>
     </section>
+
+    <section class="carousel">
+       <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_3.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> <!-- подключаем 1 скрипт для подключения библиотеки JQuery с сайта slick для создания слайдера -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- подключаем 2 скрипт для подключения библиотеки JQuery с сайта slick для создания слайдера -->
+    <script src="js/slick.min.js"></script> <!-- и теперь после подключения библиотек JQuery мы подключаем сам скрипт Slick -->
+    <script src="js/script.js"></script>
 </body>
 </html>
